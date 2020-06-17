@@ -92,6 +92,12 @@
       return UITableViewStylePlain;
     case RATreeViewStyleGrouped:
       return UITableViewStyleGrouped;
+    case RATreeViewStyleInsetGrouped:
+      if (@available(iOS 13.0, *)) {
+          return UITableViewStyleInsetGrouped;
+      } else {
+          return UITableViewStyleGrouped;
+      }
   }
 }
 
@@ -101,6 +107,8 @@
     case UITableViewStylePlain:
       return RATreeViewStylePlain;
     case UITableViewStyleGrouped:
+      return RATreeViewStyleGrouped;
+    case UITableViewStyleInsetGrouped:
       return RATreeViewStyleGrouped;
   }
 }

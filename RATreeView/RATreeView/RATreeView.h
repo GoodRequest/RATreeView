@@ -23,7 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef enum {
     RATreeViewStylePlain = 0,
-    RATreeViewStyleGrouped
+    RATreeViewStyleGrouped,
+    RATreeViewStyleInsetGrouped
 } RATreeViewStyle;
 
 typedef enum RATreeViewCellSeparatorStyle {
